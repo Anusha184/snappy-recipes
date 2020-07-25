@@ -18,8 +18,6 @@ uploadButton.addEventListener("click", event => imgValidation(event));
 
 function imgValidation(event) {
   event.preventDefault();
-  // document.getElementById("reset-button-container").classList.remove("d-none");
-  // document.getElementById("reset-button-container").classList.add("d-flex");
   document.getElementById("diet").disabled = true;
   document.getElementById("input-form").disabled = true;
   document.getElementById("upload").disabled = true;
@@ -57,8 +55,6 @@ function resetFields() {
   document.getElementById("input-form").disabled = false;
   document.getElementById("upload").disabled = false;
     document.getElementById("custom-file-label").textContent = "";
-    // document.getElementById("reset-button-container").classList.remove("d-flex");
-    // document.getElementById("reset-button-container").classList.add("d-none");
     if (document.getElementById("myImage")) {
       document.getElementById("myImage").remove();
     }
