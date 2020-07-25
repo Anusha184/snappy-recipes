@@ -249,8 +249,6 @@ function imageLoaderFunction(imageLoader, imageURL){
     .then(image => {
       myImage.src = imageURL;
     })
-  // let myImage = document.getElementById("myImage");
-  // myImage.src = imageURL;
 }
 
 
@@ -264,18 +262,6 @@ function imageTitleOnPage(imageTitle) {
   h1.textContent = imageTitle;
   titleContainer.append(h1);
 }
-
-// function showHideResDiv() {
-//   const yesRes = document.getElementById("yes-restrictions");
-//   const resDiv = document.getElementById("dietary-restrictions");
-//   resDiv.className = yesRes.checked ? "" : "d-none";
-// }
-
-// function showHideIntDiv() {
-//   const yesInt = document.getElementById("yes-intolerances");
-//   const intDiv = document.getElementById("dietary-intolerances");
-//   intDiv.className = yesInt.checked ? "" : "d-none";
-// }
 
 function recipeOnPage(recipes) {
   const recipeContainer = document.getElementById("recipes-container");
